@@ -52,16 +52,39 @@ You can now make requests to the API using tools like curl, Postman, or any HTTP
 - `GET /v1/random/{number}`: Get a specific number of random quotes.
 - `GET /v1/character/{character}/{number?}`: Get a specific number of quotes by a particular character.  If the `number` parameter is not provided, it defaults to 1.
 
-## Project Structure
+# Data
 
-The project follows a clean architecture with the following structure:
+## Quotes
 
-- **src**: Main source code directory.
-  - **controller**: Controller for handling HTTP requests.
-  - **quoteInterface**: Quote interface.
-  - **routes**: Express route definitions.
-  - **service**: Business logic and data handling service.
-  - **index.ts**: Entry point to start the server.
+The project includes a `data/quotes.json` file that stores information about quotes from different characters. The structure of each entry in the JSON array is as follows:
+
+```json
+[
+    {
+        "timestamp": "0:00:03",
+        "character": "Première voix off",
+        "quote": "Attention, ce flim n'est pas un flim sur le cyclimse. Merci de votre compréhension."
+    },
+    {
+        "timestamp": "0:00:13",
+        "character": "Deuxième voix off",
+        "quote": "Entre l'Australia et la South América, dans l'océan South Pacific : l'atoll de Pom Pom Galli."
+    },
+    // ...
+]
+```
+
+## Available Characters
+
+The `data/characters.json` file follows a simple JSON array format with character names:
+
+```json
+[
+    "Bob",
+    "Callaghan",
+    // ...
+]
+```
 
 ## Contributing
 

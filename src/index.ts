@@ -1,5 +1,5 @@
 import express from 'express';
-import quotes from '../data.json';
+import quotes from '../data/quotes.json';
 import { Controller } from './controller';
 import { Service } from './service';
 import { routes } from './routes';
