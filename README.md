@@ -7,7 +7,7 @@ This project is a simple Node.js API that provides random quotes and quotes by c
 - [Installation](#installation)
 - [Usage](#usage)
 - [Endpoints](#endpoints)
-- [Project Structure](#project-structure)
+- [Data](#data)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -52,9 +52,9 @@ You can now make requests to the API using tools like curl, Postman, or any HTTP
 - `GET /v1/random/{number}`: Get a specific number of random quotes.
 - `GET /v1/character/{character}/{number?}`: Get a specific number of quotes by a particular character.  If the `number` parameter is not provided, it defaults to 1.
 
-# Data
+## Data
 
-## Quotes
+### Quotes
 
 The project includes a `data/quotes.json` file that stores information about quotes from different characters. The structure of each entry in the JSON array is as follows:
 
@@ -74,7 +74,7 @@ The project includes a `data/quotes.json` file that stores information about quo
 ]
 ```
 
-## Available Characters
+### Available Characters
 
 The `data/characters.json` file follows a simple JSON array format with character names:
 
