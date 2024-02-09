@@ -56,7 +56,7 @@ You can now make requests to the API using tools like curl, Postman, or any HTTP
 
 ### Quotes
 
-The project includes a `data/quotes.json` file that stores information about quotes from different characters. The structure of each entry in the JSON array is as follows:
+The project includes a [quotes.json](data/quotes.json) file that stores information about quotes from different characters. The structure of each entry in the JSON array is as follows:
 
 ```json
 [
@@ -76,7 +76,7 @@ The project includes a `data/quotes.json` file that stores information about quo
 
 ### Available Characters
 
-The `data/characters.json` file follows a simple JSON array format with character names:
+The [characters.json](data/characters.json) file follows a simple JSON array format with character names:
 
 ```json
 [
