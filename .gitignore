@@ -1,0 +1,10 @@
+*.log
+*.tsbuildinfo
+*.tsbuildinfo
+.env
+.vscode/
+.yarn-integrity
+coverage/
+dist/
+node_modules/
+npm-debug.log
