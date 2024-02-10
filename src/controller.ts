@@ -1,24 +1,20 @@
 import { Request, Response } from 'express';
 import { Service } from './service';
+import { IQuote } from 'quoteInterface';
 
 export class Controller {
     private service: Service;
 
     constructor(service: Service) {
         this.service = service;
-        this.bindMethods();
+
+        this.getRandomQuote = this.getRandomQuote.bind(this);
+        this.getRandomQuotes = this.getRandomQuotes.bind(this);
+        this.getQuotesByCharacter = this.getQuotesByCharacter.bind(this);
     }
 
-    private bindMethods(): void {
-        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this)) as (keyof Controller)[];
-
-        methods.forEach((method) => {
-            const property = this[method];
-
-            if (typeof property === 'function') {
-                this[method] = property.bind(this);
-            }
-        });
+    getService(): Service {
+        return this.service
     }
 
     getRandomQuote(req: Request, res: Response): void {

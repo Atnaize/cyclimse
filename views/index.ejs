@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyclimse</title>
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <div id="container">
+    <div id="quote">
+        <blockquote>
+            <p>"<%= quote.quote %>"</p>
+            <i>- <%= quote.character %></i>
+        </blockquote>
+    </div>
+
+    <div id="video-preview">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/A6PE1WWkBIo?start=<%= timestamp %>"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+    </div>
+  </div>
+</body>
+</html>

@@ -10,7 +10,9 @@ const PORT = 3000;
 const service = new Service(quotes);
 const controller = new Controller(service);
 
-app.use('/v1', routes(controller));
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
+app.use(routes(controller));
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);

@@ -11,6 +11,11 @@ export class Service {
         return this.quotes[Math.floor(Math.random() * this.quotes.length)];
     }
 
+    getYoutubeTimestamp(timestamp: string): number {
+        const [hours, minutes, seconds] = timestamp.split(':').map(Number);
+        return hours * 3600 + minutes * 60 + seconds + 8;
+    }
+
     getRandomQuotes(number: number): IQuote[] {
         const numberOfQuotes = Math.min(number, this.quotes.length);
         const shuffledQuotes = this.shuffleArray([...this.quotes]);

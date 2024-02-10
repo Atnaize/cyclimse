@@ -1,0 +1,21 @@
+body {
+  background-color: #3ea6ff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+}
+
+#container {
+  margin: 0 auto;
+}
+
+#quote {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#video-preview {
+  text-align: center;
+  margin-bottom: 50px;
+}
